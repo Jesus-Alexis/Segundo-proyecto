@@ -1,0 +1,135 @@
+body{
+   background-color: rgb(36, 32, 32);
+}
+
+
+ p,.text{
+    font-family: sans-serif;
+    color: beige ;
+    text-align: center;
+    font-size: 20px;
+}
+h1{
+    font-family: sans-serif;
+    color: beige;
+    text-align: center;
+    font-size: 35px;
+}
+
+.text-color{
+    color: red;
+}
+
+.container{
+    box-sizing: border-box;
+    font-family: "Comic Neue", cursive;
+    font-weight:250;
+    font-style: normal;
+    height: 70vh;
+    display: flex;
+    justify-content:center;
+    flex-wrap: flex;
+    align-items: center;
+}
+h2{
+    color: #fff;
+}
+
+.card{
+    color: rgb(193, 141, 141);
+    text-align: center;
+    margin: 10px;
+    transition: 300ms;
+    height: 450px;
+    width: 850px;
+    background-image: linear-gradient(
+            37deg,
+            rgb(0, 0, 0),
+            rgb(87, 20, 20),
+            rgb(137, 28, 28),
+            rgb(188, 46, 46),
+            rgb(201, 42, 42)
+          );
+}
+
+.personaje{
+    height: 450px;
+    width: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    transition: 300ms;
+    background-image: linear-gradient(
+        37deg,
+        rgb(0, 0, 0),
+        rgb(87, 20, 20),
+        rgb(137, 28, 28),
+      );
+    position: absolute;
+}
+
+.imagen_personaje{
+    height: 480px;
+    width: 500px;
+    background-image: url(img/trandorm.png);
+    background-size: cover;
+    margin-bottom: 100px;
+    transition: 300ms;
+    filter: drop-shadow(5px -2px 10px #000);
+}
+
+.detalle{
+  height: 250px;
+  width: 450px;
+  background-image: linear-gradient(
+    37deg,
+    rgb(0, 0, 0),
+    rgb(87, 20, 20),
+    rgb(137, 28, 28),
+  );
+  position: absolute;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 150px;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  transition: 300ms;
+}
+
+/* Hover */
+.card:hover .imagen_personaje{
+    transform: translateY(-40px);
+    transition: 300ms;
+    filter: none;
+    background-image: url(img/transfomr2.png);
+    height: 480px;
+    width: 500px;
+}
+
+.lista, li::marker{
+ color: beige;
+ font-size: 20px;
+}
+
+.head-line{
+    font-size: 35px;
+    color: beige;
+    margin: 50px 0;
+    text-align: center;
+}
+
+h3{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+a{
+    color: red;
+}
